@@ -1,0 +1,141 @@
+API:Discover Services
+URL:
+http://localhost:8088/discover/services
+Input:
+["EC2","S3"]
+Output:
+8b3a40a0-ebda-4c7d-a32c-865866c4797e
+
+API:Discover Result
+URL:
+http://localhost:8088/discover/result/S3
+
+Output:
+[
+    {
+        "name": "nimesaassignmentbucket1",
+        "owner": {
+            "displayName": "Delhi",
+            "id": "e59d7b9c7a7599a888b37755182c7fbbb8fda44498b6a6be5462b96b3ebf0992"
+        },
+        "creationDate": "2023-11-16T14:13:25.000+0000"
+    },
+    {
+        "name": "nimesaassignmentbucket2",
+        "owner": {
+            "displayName": "Delhi",
+            "id": "e59d7b9c7a7599a888b37755182c7fbbb8fda44498b6a6be5462b96b3ebf0992"
+        },
+        "creationDate": "2023-11-16T14:13:38.000+0000"
+    },
+    {
+        "name": "nimesaassignmentbucket3",
+        "owner": {
+            "displayName": "Delhi",
+            "id": "e59d7b9c7a7599a888b37755182c7fbbb8fda44498b6a6be5462b96b3ebf0992"
+        },
+        "creationDate": "2023-11-16T14:14:07.000+0000"
+    },
+    {
+        "name": "nimesaassignmentbucket4",
+        "owner": {
+            "displayName": "Delhi",
+            "id": "e59d7b9c7a7599a888b37755182c7fbbb8fda44498b6a6be5462b96b3ebf0992"
+        },
+        "creationDate": "2023-11-16T14:14:42.000+0000"
+    }
+]
+
+URL:
+http://localhost:8088/discover/result/EC2
+Output:
+[
+    "i-017e6519856f51d35",
+    "i-0d84e2f42c1069be6",
+    "i-04f8748ebcc51cf75",
+    "i-049ba798a61b88a0b",
+    "i-01d5daae2fbe5ed9d"
+]
+
+API:GetS3Count
+URL:
+http://localhost:8088/get/count/nimesaassignmentbucket4
+Output:
+5
+
+API:GetS3Like
+URL:
+http://localhost:8088/get/object/like/nimesaass
+Output:
+[
+    {
+        "id": 1,
+        "bucketName": "nimesaassignmentbucket4",
+        "ownerName": "Delhi",
+        "ownerId": "e59d7b9c7a7599a888b37755182c7fbbb8fda44498b6a6be5462b96b3ebf0992",
+        "creationDate": "2023-11-16T14:14:42.000+0000",
+        
+    },
+    {
+        "id": 2,
+        "bucketName": "nimesaassignmentbucket4",
+        "ownerName": "Delhi",
+        "ownerId": "e59d7b9c7a7599a888b37755182c7fbbb8fda44498b6a6be5462b96b3ebf0992",
+        "creationDate": "2023-11-16T14:14:42.000+0000",
+        "s3_files": null
+    },
+    {
+        "id": 3,
+        "bucketName": "nimesaassignmentbucket4",
+        "ownerName": "Delhi",
+        "ownerId": "e59d7b9c7a7599a888b37755182c7fbbb8fda44498b6a6be5462b96b3ebf0992",
+        "creationDate": "2023-11-16T14:14:42.000+0000",
+        "s3_files": null
+    },
+    {
+        "id": 4,
+        "bucketName": "nimesaassignmentbucket4",
+        "ownerName": "Delhi",
+        "ownerId": "e59d7b9c7a7599a888b37755182c7fbbb8fda44498b6a6be5462b96b3ebf0992",
+        "creationDate": "2023-11-16T14:14:42.000+0000",
+        "s3_files": null
+    },
+    {
+        "id": 5,
+        "bucketName": "nimesaassignmentbucket1",
+        "ownerName": "Delhi",
+        "ownerId": "e59d7b9c7a7599a888b37755182c7fbbb8fda44498b6a6be5462b96b3ebf0992",
+        "creationDate": "2023-11-16T14:13:25.000+0000",
+        "s3_files": null
+    },
+    {
+        "id": 6,
+        "bucketName": "nimesaassignmentbucket2",
+        "ownerName": "Delhi",
+        "ownerId": "e59d7b9c7a7599a888b37755182c7fbbb8fda44498b6a6be5462b96b3ebf0992",
+        "creationDate": "2023-11-16T14:13:38.000+0000",
+        "s3_files": null
+    },
+    {
+        "id": 7,
+        "bucketName": "nimesaassignmentbucket3",
+        "ownerName": "Delhi",
+        "ownerId": "e59d7b9c7a7599a888b37755182c7fbbb8fda44498b6a6be5462b96b3ebf0992",
+        "creationDate": "2023-11-16T14:14:07.000+0000",
+        "s3_files": null
+    },
+    {
+        "id": 8,
+        "bucketName": "nimesaassignmentbucket4",
+        "ownerName": "Delhi",
+        "ownerId": "e59d7b9c7a7599a888b37755182c7fbbb8fda44498b6a6be5462b96b3ebf0992",
+        "creationDate": "2023-11-16T14:14:42.000+0000",
+        "s3_files": null
+    }
+]
+
+API:GetS3Object
+URL:
+http://localhost:8088/get/object/nimesaassignmentbucket1
+Output:
+8b3a40a0-ebda-4c7d-a32c-865829c4797e
